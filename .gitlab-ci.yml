@@ -1,0 +1,17 @@
+stages:
+  - build
+  - deploy
+job1:
+  stage: build
+  tags:
+    - sample
+  script:
+    - mvn package
+  
+job2:  
+  stage: deploy
+  tags:
+    - sample
+  script:
+   
+    - dir
